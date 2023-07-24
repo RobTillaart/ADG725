@@ -15,13 +15,20 @@ Arduino library for ADG725 - 16 to 1 channel (2x) multiplexer.
 
 **Experimental**
 
-ADG725 is an Arduino class that controls a 2 x 16 multiplexer over a SPI
-like interface.
+ADG725 is an Arduino class that controls two 16 to 1 multiplexers 
+over a SPI like interface.
 Only one of the 16 channels can be connected at the same time.
-
-This library can be used to connect 16 analog devices to one analog port.
+The channels can be set per multiplexer or together in one call.
+The library also support to set them all off (17th state).
 
 On power-up, all switches are in the OFF state.
+
+This library can be used e.g. to connect 16 analog devices to 
+one analog port, or to select between 16 DHT22 sensors.
+
+Not tests with hardware have been done yet, so use with care.
+Feedback welcome!
+
 
 TODO insert picture.
 
@@ -32,6 +39,7 @@ TODO insert picture.
 - https://github.com/RobTillaart/HC4052 (2x8 mux)
 - https://github.com/RobTillaart/HC4053 (3x2 mux)
 - https://github.com/RobTillaart/HC4067 (1x16 mux)
+- https://github.com/RobTillaart/ADG725 (2x16 mux)
 - https://github.com/RobTillaart/ADG731 (1x32 mux)
 
 
@@ -57,7 +65,7 @@ Valid values for channel are 0..15.
 
 #### Must
 
-- update documentation
+- improve documentation
 - test with hardware
 
 #### Should
