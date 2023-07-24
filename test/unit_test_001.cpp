@@ -2,7 +2,7 @@
 //    FILE: unit_test_001.cpp
 //  AUTHOR: Rob Tillaart
 //    DATE: 2023-07-24
-// PURPOSE: unit tests for the AnalogPin library
+// PURPOSE: unit tests for the ADG725 library
 //          https://github.com/RobTillaart/ADG725
 //          https://github.com/Arduino-CI/arduino_ci/blob/master/REFERENCE.md
 //
@@ -98,7 +98,7 @@ unittest(test_channelB)
 {
   ADG725 ADG(10, 11, 12);
 
-  ADG.setChannelB(13);
+  ADG.setChannelA(13);
   for (int ch = 0; ch < 16; ch++)
   {
     ADG.setChannelB(ch);

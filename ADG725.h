@@ -12,10 +12,10 @@
 
 #define ADG725_LIB_VERSION         (F("0.1.0"))
 
-#define ADG725_ALLOFF              0x80
-#define ADG725_A_ONLY              0x20
-#define ADG725_B_ONLY              0x40
-#define ADG725_AB_BOTH             0x00
+#define ADG725_ALLOFF              0x80    //  ENable bit (false)
+#define ADG725_A_ONLY              0x20    //  retain B
+#define ADG725_B_ONLY              0x40    //  retain A
+#define ADG725_AB_BOTH             0x00    //  retain none
 
 
 class ADG725
