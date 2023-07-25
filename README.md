@@ -15,7 +15,7 @@ Arduino library for ADG725 - 16 to 1 channel (2x) multiplexer.
 
 **Experimental**
 
-ADG725 is an Arduino class that controls two 16 to 1 multiplexers 
+ADG725 is an Arduino class that controls two 16 to 1 multiplexers
 over a SPI like interface.
 Only one of the 16 channels can be connected at the same time.
 The channels can be set per multiplexer or together in one call.
@@ -23,10 +23,10 @@ The library also support to set them all off (17th state).
 
 On power-up, all switches are in the OFF state.
 
-This library can be used e.g. to connect 16 analog devices to 
+This library can be used e.g. to connect 16 analog devices to
 one analog port, or to select between 16 DHT22 sensors.
 
-Not tests with hardware have been done yet, so use with care.
+No tests with hardware have been done yet, so use with care.
 Feedback welcome!
 
 
@@ -40,7 +40,9 @@ TODO insert picture.
 - https://github.com/RobTillaart/HC4053 (3x2 mux)
 - https://github.com/RobTillaart/HC4067 (1x16 mux)
 - https://github.com/RobTillaart/ADG725 (2x16 mux)
+- https://github.com/RobTillaart/ADG726 (2x16 mux)
 - https://github.com/RobTillaart/ADG731 (1x32 mux)
+- https://github.com/RobTillaart/ADG732 (1x32 mux)
 
 
 ## Interface
@@ -59,14 +61,16 @@ Valid values for channel are 0..15.
 - **uint8_t getChannelA()** get last set channel A == 0..15 or ADG725_ALLOFF.
 - **uint8_t getChannelB()** get last set channel B == 0..15 or ADG725_ALLOFF.
 - **uint8_t channelCount()** returns 16 for ADG725.
-
+- **void allOff()** sets all channels to OFF, none selected.
 
 ## Future
 
 #### Must
 
 - improve documentation
+  - insert schematic
 - test with hardware
+- keep in sync with ADG726 (interface)
 
 #### Should
 
