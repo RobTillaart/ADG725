@@ -1,4 +1,4 @@
-r//
+//
 //    FILE: ADG725_performance.ino
 //  AUTHOR: Rob Tillaart
 // PURPOSE: measure performance
