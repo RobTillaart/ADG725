@@ -16,11 +16,11 @@ uint32_t start, stop;
 void setup()
 {
   Serial.begin(115200);
-  Serial.print();
+  Serial.println();
   Serial.println(__FILE__);
   Serial.print("ADG725_LIB_VERSION: ");
   Serial.println(ADG725_LIB_VERSION);
-  Serial.print();
+  Serial.println();
   delay(100);
 
   start = micros();
